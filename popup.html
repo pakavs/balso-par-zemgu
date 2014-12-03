@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Balsto par Zemgu</title>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,300,400);
+      body {
+          font-family: 'Roboto Condensed', sans-serif;
+        min-width: 350px;
+        overflow-x: hidden;
+        font-weight:300;
+      }
+      
+      h1{
+        font-size:17px;
+        font-weight:400;
+      }
+      
+      h2{
+        font-size:15px;
+        font-weight:400;
+                padding:0;
+        margin:0;
+      }
+        h3{
+        font-size:13px;
+        font-weight:300;
+        color:#999;
+        padding:0;
+        margin:0;
+      }
+
+      img {
+        margin: 5px; 
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+      }
+      .button{
+        background-color: #e51937;
+        background-repeat: no-repeat;
+        background-position: center right;
+        cursor: pointer;
+        border-radius: 2px;
+        border: 0;
+        color: #fff;
+        font-size: 12px;
+        height: 28px;
+        padding: 0;
+        line-height: 28px;
+        text-transform: uppercase;
+        width:90px;
+        text-align:center;
+    }
+
+table{
+        width:100%;
+        font-size:14px;
+}
+
+table tbody td{
+    padding:5px;
+}
+
+.headings{
+    background-color: #e51937;
+    width: 800px;
+    height: 30px;
+}
+
+.headings td{
+    font-size:13px;
+    font-weight:400;
+    text-align:center;
+    padding: 0 5px;
+    vertical-align: middle;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+#login-container{
+    padding:5px;
+}
+
+#login-container input[type="text"]{
+    font-size: 14px;
+    padding: 5px;
+    margin:0;
+}
+#login-container p{
+    margin:0;
+    font-size:15px;
+}
+
+
+    </style>
+    <script src="jquery.min.js"></script>
+    <script src="popup.js"></script>
+    
+  </head>
+  <body>
+      <div id="content" style="margin:0 auto; text-align:center;">
+        <h1>Balsto par Zemgu</h1>
+        <img src="https://secure-nhl.plcontent.com/allstar-pl2580/Content/UGC/image/converted/cc70c36a-34d7-43c9-aa0d-97356a8480c8.jpg">
+        <br>
+        <button class="button" id="vote-button" style="display:none;">Balstot</button>      
+        
+        <div id="login-container" style="display:none;">        
+            <p>Lietotājvārds vai e-pasts</p>
+            <input type="text" id="Identifier">
+            <p>Parole</p>
+            <input type="password" id="Proof">
+            <br>
+            <br>
+            <button id="login-button" class="button">Ielogoties</button>        
+        </div>        
+    </div>
+    <br>
+    <div id="logs"></div>
+    <br>    
+    <div id="ranks" style="display:none;">
+        <h2>Uzbrucēju tops</h2>
+        <h3>Uz All-star tiek pirmie 3</h3>
+        <table cellpadding="0" cellspacing="0">
+        <thead>
+            <tr class="headings">
+                    <td class="rank lb-divider">#</td>
+                    <td class="lb-divider">Spēlētājs</td>                       
+                    <td class="team" checked="checked">Komanda</td>
+
+                </tr>
+         </thead>
+         <tbody></tbody>
+        </table>
+    </div>
+  </body>
+</html>
+
