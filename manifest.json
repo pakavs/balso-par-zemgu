@@ -2,8 +2,9 @@
   "manifest_version": 2,
 
   "name": "Balsto par Zemgu",
+  "short_name": "Iebalsosim Zemgusu Girgensonu 2015 NHL All-Star",
   "description": "Iebalsosim Zemgusu Girgensonu 2015 NHL All-Star",
-  "version": "1.0",
+  "version": "2.0",
 
   "browser_action": {
 
@@ -16,8 +17,7 @@
   
   "permissions": [
     "https://allstarvote.nhl.com/"
-  ]
-  
- 
-  
+  ],
+
+  "homepage_url": "https://github.com/pakavs/balso-par-zemgu"  
 }
